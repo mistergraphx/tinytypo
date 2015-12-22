@@ -1,0 +1,49 @@
+/* # Print styles
+
+Print styles from HTML5 Boilerplate
+Inlined to avoid required HTTP connection: <h5bp.com/r>
+
+(c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
+
+Styleguide tinytypo.print
+*/
+@media print {
+    
+    
+    * {
+        text-shadow: none !important;
+        color: #000 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    // medias
+	img {
+		max-width: 100% !important;
+	}
+    // Typo
+    pre, blockquote {
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr, img {
+		page-break-inside: avoid;
+	}
+	@page {
+		margin: 2cm .5cm;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+    abbr[title] {
+		border-bottom: 0;
+	}
+	abbr[title]:after {
+		content:" (" attr(title)")";
+	}
+}

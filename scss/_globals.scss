@@ -1,0 +1,34 @@
+//
+// Variables
+// --------------------------------------------------
+$autoprefixer:          false !default;
+// Colors
+$color-bg:              #f8f8f8 !default;		// Couleur du fond
+$color-txt:				#222 !default;			// Couleur du texte
+$color-mid:				#666 !default;			// Couleur pour gris moyen et filets
+$color: 				#900 !default;			// Couleur principale du theme
+
+// Fonts
+$font1: serif !default;			// Corps de texte principal
+$font2: sans-serif !default;		// Titraille
+$font3: monospace !default;		// Code
+$font4: fantasy !default;		// Alternative, fantaisie (facultative)
+
+// Typo
+$font-size:	 1em; // ~ 16px
+$font-size-big: ceil($font-size * 1.30); // 130%
+$font-size-small: ceil($font-size * 0.80); // 90%
+
+$line-height:1.5 !default;
+$p: $line-height + 0em !default;
+$alinea: $line-height + 0em !default;
+$gutter: $line-height + 0em !default;
+
+// Links
+$color-link:  $color-txt !default;
+$color-link-hover:  darken($color-link, 15%) !default;
+
+// Media queries breakpoints
+$screen-small: 480px !default;
+$screen-medium: 640px !default;
+$screen-large: 992px !default;
