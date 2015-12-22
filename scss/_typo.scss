@@ -345,7 +345,8 @@ blockquote {
 	z-index: 0;
 	position: relative;
 	padding-left: $alinea;
-	border: solid fadeout($color-txt, 80%);
+	border: solid rgba($color-txt, .2);
+    
 	border-width: 0 0 0 5px;
 }
 blockquote:before {
@@ -356,7 +357,7 @@ blockquote:before {
 	content:"\00AB";
 	line-height: 0;
 	font-size: 10em;
-	color: fadeout($color-txt, 90%);
+	color: fade-out($color-txt, .9);
 }
 cite, .cite {
 	font-style: italic;
