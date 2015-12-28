@@ -1,7 +1,7 @@
-//
+// ------------------------------------------------*/
 // Variables
-// --------------------------------------------------
-$autoprefixer:          false !default;
+// ------------------------------------------------*/
+$autoprefixer:          false !default;         // si true on ne genere pas les prefix
 // Colors
 $color-bg:              #f8f8f8 !default;		// Couleur du fond
 $color-txt:				#222 !default;			// Couleur du texte
@@ -10,7 +10,7 @@ $color: 				#900 !default;			// Couleur principale du theme
 
 // Fonts
 $font1: serif !default;			// Corps de texte principal
-$font2: sans-serif !default;		// Titraille
+$font2: sans-serif !default;	// Titraille
 $font3: monospace !default;		// Code
 $font4: fantasy !default;		// Alternative, fantaisie (facultative)
 

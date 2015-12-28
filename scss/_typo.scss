@@ -1,11 +1,12 @@
-/* --------------------------------------------------
+@charset "UTF-8";
 
-   Typographical base
+/* # Typographical base
    
-   (c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
+(c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
 
------------------------------------------------------ */
- html {
+
+*/
+html {
 	font-size: 100.01%;
 	// IE < 6 -ms-text-size-adjust: 100%;
 	// iOS -webkit-text-size-adjust: 100%;
@@ -14,7 +15,7 @@
 /* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/
 et http://forum.alsacreations.com/topic-4-54377-1.html
 [en] http://stackoverflow.com/questions/2703056/body-font-size-100-01-vs-body-font-size-100 */
- body {
+body {
 	font-size: $font-size;
 	line-height: $line-height;
 }
@@ -32,7 +33,7 @@ et http://forum.alsacreations.com/topic-4-54377-1.html
 	font-family: $font4;
 }
 /* Titraille / Intertitres */
- h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -81,7 +82,7 @@ hr {
 	border-width: 1px 0 0;
 }
 /* Typographical enhancements */
- em, i, .i {
+em, i, .i {
 	font-style: italic;
 }
 strong, b, .b {
