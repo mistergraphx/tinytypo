@@ -1,10 +1,13 @@
-/* --------------------------------------------------
-
-   Illustrations, images and albums
+/* # Illustrations, images and albums
    
-   (c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
+(c) 2010-2014 Tiny Typo #{$tinytypo-version} - MIT License - tinytypo.tetue.net
 
------------------------------------------------------ */
+@version - #{$tinytypo-version}
+@licence - MIT License
+@see - http://tinytypo.tetue.net
+
+Styleguide tinytypo.media
+*/
  // List common types NIME //[fr] Liste des types NIME usuels // - application // - audio // - example // - image // - message // - model // - multipart // - text // - video // - vnd
 /* Make images responsive by default */
  img {
