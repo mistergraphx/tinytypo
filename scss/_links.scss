@@ -68,12 +68,10 @@ a[hreflang].audio:after { content: "\0000a0[" attr(hreflang) "]\0000a0\266B" }
 a img { border: 0 }
 a:focus img,
 a:active img {
-    @if $autoprefixer == false {
-      -moz-transform: translateY(1px);
-      -webkit-transform: translateY(1px);
-      -o-transform: translateY(1px);
-      -ms-transform: translate(1px);
-    }
+    -moz-transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    -ms-transform: translate(1px);
     transform: translateY(1px);
 }
 
