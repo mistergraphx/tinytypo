@@ -16,9 +16,9 @@ $font3: monospace !default;		// Code
 $font4: fantasy !default;		// Alternative, fantaisie (facultative)
 
 // Typo
-$font-size:	 1em; // ~ 16px
-$font-size-big: ceil($font-size * 1.30); // 130%
-$font-size-small: ceil($font-size * 0.80); // 90%
+$font-size:	 1em !default; // ~ 16px
+$font-size-big: ceil($font-size * 1.30) !default; // 130%
+$font-size-small: ceil($font-size * 0.80) !default; // 90%
 
 $line-height:1.5 !default;
 $p: $line-height + 0em !default;
