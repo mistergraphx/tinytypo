@@ -1,26 +1,13 @@
-/* # TinyTypo
-
-@package - Tiny Typo
-@version - v1.3.2
-@liscence - MIT
-@see - <tinytypo.tetue.net>
-@see - <https://github.com/tetue/tinytypo>
-
-Styleguide tinytypo
-*/
-// Globals !defaults
 @import "globals";
 
-// Load webfonts in first
-@import "font";
-
-// Reset
-@import "reset";
-
 // Base CSS
+@import "reset";
 @import "clear";
+
+// Tiny Typo
+@import "font";
 @import "typo";
 @import "links";
 @import "media";
-@import "theme";
+
 @import "print";

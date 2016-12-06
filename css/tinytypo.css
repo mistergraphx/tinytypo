@@ -1,153 +1,48 @@
-@charset "UTF-8";
-/* # TinyTypo
-
-@package - Tiny Typo
-@version - v1.3.2
-@liscence - MIT
-@see - <tinytypo.tetue.net>
-@see - <https://github.com/tetue/tinytypo>
-
-Styleguide tinytypo
-*/
 /* --------------------------------------------------
 
-   font.css
+   Composition helpers
+   [fr] Aides a la composition
+   
+   (c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
 
 ----------------------------------------------------- */
-/* Call your webfonts here
-[fr] Appelez vos webfonts ici */
-/* # Reset
-
-http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-
-Styleguide tinytypo.reset
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000310}}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000331}}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000335}}
-body {
-  line-height: 1; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000338}}
-ol, ul {
-  list-style: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000341}}
-blockquote, q {
-  quotes: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000344}}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_reset\.scss}line{font-family:\0000350}}
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* # Clear
-
-Composition helpers
-[fr] Aides a la composition
-   
-(c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
-
-Styleguide tinytypo.clear
-*/
-/* # Box model
+/* Box model
 [fr] http://blog.goetter.fr/post/27612618411/box-sizing-et-pourquoi-pas
 [en] http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000315}}
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
+  box-sizing: border-box;
+}
 /* Blocks */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000323}}
 .block {
   display: block;
-  margin-bottom: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000327}}
+  margin-bottom: 1.5em;
+}
 .inline {
-  display: inline; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000330}}
+  display: inline;
+}
 .inline-block {
-  display: inline-block; }
-
-/* Lists, tables and mosaics */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000335}}
-.first {
-  margin-left: 0;
-  padding-left: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000339}}
-.last {
-  margin-right: 0;
-  padding-right: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000343}}
-.top {
-  margin-top: 0;
-  padding-top: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000347}}
-.bottom {
-  margin-bottom: 0;
-  padding-bottom: 0; }
-
+  display: inline-block;
+}
 /* Positioning */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000358}}
 .left {
-  float: left; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000361}}
+  float: left;
+}
 .right {
-  float: right; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000364}}
+  float: right;
+}
 .center {
   margin-right: auto;
-  margin-left: auto; }
-
+  margin-left: auto;
+}
 /* Blocks spacer
 [fr] Espaceur de blocs : http://romy.tetue.net/657 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000370}}
 .clear {
-  clear: both; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000373}}
+  clear: both;
+}
 br.clear {
   clear: both;
   margin: 0;
@@ -155,1086 +50,86 @@ br.clear {
   border: 0;
   height: 0;
   line-height: 1px;
-  font-size: 1px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000382}}
+  font-size: 1px;
+}
 hr.clear {
-  visibility: hidden; }
-
+  visibility: hidden;
+}
 /* clearfix : http://www.positioniseverything.net/easyclearing.html */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000386}}
 .clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
-  overflow: hidden; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000394}}
+  overflow: hidden;
+}
 .clearfix {
-  display: inline-table; }
-
+  display: inline-table;
+}
 /* Hides from IE-mac \*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\0000398}}
 .clearfix {
-  height: 1%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003101}}
+  height: 1%;
+}
 .clearfix {
-  display: block; }
-
+  display: block;
+}
 /* End hide from IE-mac */
 /* Not visible */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003107}}
 .offscreen {
   position: absolute;
   left: -999em;
-  height: 1%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003112}}
+  height: 1%;
+}
 .hidden {
-  visibility: hidden; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003115}}
+  visibility: hidden;
+}
 .none {
-  display: none; }
-
+  display: none;
+}
 /* debug */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003119}}
 .todo {
-  opacity: 0.5; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003122}}
+  opacity: 0.5;
+}
 .todo:hover {
-  opacity: 1; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_clear\.scss}line{font-family:\00003125}}
+  opacity: 1;
+}
 .blink {
-  text-decoration: blink; }
-
-/* # Typographical base
-   
-(c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
-
-
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\000039}}
-html {
-  font-size: 100.01%; }
-
-/* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/
-et http://forum.alsacreations.com/topic-4-54377-1.html
-[en] http://stackoverflow.com/questions/2703056/body-font-size-100-01-vs-body-font-size-100 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000318}}
-body {
-  font-size: 1em;
-  line-height: 1.5; }
-
-/* Fonts */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000323}}
-.font1 {
-  font-family: serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000326}}
-.font2 {
-  font-family: sans-serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000329}}
-.font3 {
-  font-family: monospace; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000332}}
-.font4 {
-  font-family: fantasy; }
-
-/* Titraille / Intertitres */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000336}}
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-weight: normal; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000343}}
-h1, .h1 {
-  font-size: 2em;
-  line-height: 1.5;
-  margin-bottom: .75em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000348}}
-h2, .h2 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000353}}
-h3, .h3 {
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 1.2em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000358}}
-h4, .h4 {
-  font-size: 1.1em;
-  line-height: 1.364;
-  margin-bottom: 1.364em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000363}}
-h5, .h5 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000368}}
-h6, .h6 {
-  font-size: 1em;
-  font-weight: bold; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000372}}
-h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small {
-  font-size: 60%;
-  line-height: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000376}}
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-  margin: 1.5em 0;
-  border: solid;
-  border-width: 1px 0 0; }
-
-/* Typographical enhancements */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000385}}
-em, i, .i {
-  font-style: italic; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000388}}
-strong, b, .b {
-  font-weight: bold; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000391}}
-mark, .mark {
-  background: #ff0;
-  color: #000; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000395}}
-.smaller {
-  font-size: 75%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\0000398}}
-small, .small {
-  font-size: 80%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003101}}
-big, .big {
-  font-size: 130%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003104}}
-.bigger {
-  font-size: 175%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003107}}
-.biggest {
-  font-size: 200%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003110}}
-abbr[title], acronym[title] {
-  border-bottom: .1em dotted;
-  cursor: help; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003115}}
-dfn, .dfn {
-  font-weight: bold;
-  font-style: italic; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003119}}
-s, strike, del, .del {
-  opacity: .5;
-  text-decoration: line-through; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003123}}
-ins, .ins {
-  background-color: rgba(255, 255, 204, 0.5);
-  text-decoration: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003127}}
-u, .u {
-  text-decoration: underline; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003130}}
-sup, .sup, sub, .sub {
-  position: relative;
-  font-size: 80%;
-  font-variant: normal;
-  line-height: 0;
-  vertical-align: baseline; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003137}}
-sup, .sup {
-  top: -0.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003140}}
-sub, .sub {
-  bottom: -0.25em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003143}}
-.lead {
-  font-size: 120%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003146}}
-.caps {
-  font-variant: small-caps; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003149}}
-.quiet {
-  color: #555555; }
-
-/* Alignment */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003153}}
-.text-left {
-  text-align: left; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003156}}
-.text-right {
-  text-align: right; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003159}}
-.text-center {
-  text-align: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003162}}
-.text-justify {
-  text-align: justify;
-  text-justify: newspaper; }
-
-/* Lists */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003169}}
-ul {
-  list-style-type: disc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003172}}
-ul ul {
-  list-style-type: circle; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003175}}
-ul ul ul {
-  list-style-type: square; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003178}}
-ol {
-  list-style-type: decimal; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003181}}
-ol ol {
-  list-style-type: lower-alpha; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003184}}
-ol ol ol {
-  list-style-type: lower-greek; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003187}}
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003191}}
-ol, ul {
-  margin-left: 1.5em;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003198}}
-dt {
-  font-weight: bold; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003201}}
-dd {
-  margin-left: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003204}}
-.list-none {
-  margin-left: 0;
-  list-style: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003208}}
-.list-none li:before {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003211}}
-.list-square {
-  margin-left: 1.5em;
-  list-style: square; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003215}}
-.list-square li:before {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003218}}
-.list-disc {
-  margin-left: 1.5em;
-  list-style: disc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003222}}
-.list-disc li:before {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003225}}
-.list-circle {
-  margin-left: 1.5em;
-  list-style: circle; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003229}}
-.list-circle li:before {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003232}}
-.list-decimal {
-  margin-left: 1.5em;
-  list-style: decimal; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003236}}
-.list-decimal li:before {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003239}}
-.list-inline {
-  margin-left: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003242}}
-.list-inline li {
-  display: inline-block;
-  margin: 0;
-  margin-right: 1em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003247}}
-.list-inline li:Last-Child {
-  margin-right: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003250}}
-.list-inline.list-inline-sep li {
-  margin-right: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003253}}
-.list-inline.list-inline-sep li:after {
-  content: " | "; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003256}}
-.list-inline.list-inline-sep li:Last-Child:after {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003259}}
-.list-inline.list-inline-dash li {
-  margin-right: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003262}}
-.list-inline.list-inline-dash li:after {
-  content: " - "; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003265}}
-.list-inline.list-inline-dash li:Last-Child:after {
-  content: ''; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003268}}
-.list-inline.list-inline-comma li {
-  margin-right: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003271}}
-.list-inline.list-inline-comma li:after {
-  content: ", "; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003274}}
-.list-inline.list-inline-comma li:Last-Child:after {
-  content: ". "; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003277}}
-.list-block li {
-  display: block;
-  margin-right: 0; }
-
-/* Tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003282}}
-table {
-  max-width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003287}}
-.table {
-  width: 100%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003288}}
-.table caption,
-.table th,
-.table td {
-  padding: 0.375em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003291}}
-.table caption {
-  font-weight: bold;
-  text-align: left;
-  border-bottom: 2px solid; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003296}}
-.table th {
-  font-weight: bold; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003297}}
-.table th,
-.table td {
-  border-bottom: 1px solid; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003299}}
-.table thead th {
-  vertical-align: bottom; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003305}}
-.table tbody tr:hover td {
-  background-color: fadeout(#222, 95%); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003306}}
-.table tfoot {
-  font-style: italic; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003307}}
-.table tfoot td {
-  border-bottom: 0;
-  vertical-align: top; }
-
-@media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003314}}
-  .table-responsive {
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    margin-bottom: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003320}}
-  .table-responsive table {
-    width: 100%;
-    margin-bottom: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003324}}
-  .table-responsive thead, .table-responsive tbody, .table-responsive tfoot, .table-responsive tr, .table-responsive th, .table-responsive td {
-    white-space: nowrap; } }
-/* Quotes, code and poetry */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003330}}
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003331}}
-:lang(en) > q {
-  quotes: "“" "”" "‘" "’"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003332}}
-:lang(fr) > q {
-  quotes: "\00AB\A0" "\A0\00BB" "\201C" "\201D" "\2018" "\2019"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003333}}
-:lang(es) > q {
-  quotes: "\00AB" "\00BB" "\201C" "\201D"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003334}}
-:lang(it) > q {
-  quotes: "\00AB\A0" "\A0\00BB" "\201C" "\201D"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003335}}
-:lang(de) > q {
-  quotes: "»" "«" "›" "‹"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003336}}
-:lang(no) > q {
-  quotes: "« " " »" "‹" "›"; }
-
-/* [en] http://en.wikipedia.org/wiki/International_variation_in_quotation_marks */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003338}}
-q:before {
-  content: open-quote; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003341}}
-q:after {
-  content: close-quote; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003345}}
-blockquote {
-  z-index: 0;
-  position: relative;
-  padding-left: 1.5em;
-  border: solid rgba(34, 34, 34, 0.2);
-  border-width: 0 0 0 5px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003353}}
-blockquote:before {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "\00AB";
-  line-height: 0;
-  font-size: 10em;
-  color: rgba(34, 34, 34, 0.1); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003363}}
-cite, .cite {
-  font-style: italic; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003367}}
-address {
-  font-style: italic; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003370}}
-pre, code, kbd, samp, var, tt {
-  font-family: monospace;
-  font-size: 1em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003374}}
-pre {
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003379}}
-kbd {
-  white-space: nowrap;
-  padding: .1em .3em;
-  background-color: #eee;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset;
-  color: #333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003388}}
-samp {
-  font-weight: bold; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003391}}
-var {
-  font-style: italic; }
-
-/* Box */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003395}}
-.box {
-  display: block;
-  margin-bottom: 1.5em;
-  padding: 1.5em 1.5em;
-  padding-bottom: .1em;
-  border: 1px solid; }
-
-@media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003403}}
-  .box {
-    border: 1px solid !important; } }
-@media screen and (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003408}}
-  .box.right {
-    width: 33%;
-    margin-left: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003412}}
-  .box.left {
-    width: 33%;
-    margin-right: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003416}}
-  .box.center {
-    width: 75%; } }
-/* Paragraphs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003421}}
-p, .p, ul, ol, dl, dd, blockquote, address, pre, .table, fieldset {
-  margin-bottom: 1.5em; }
-
-/* Typography for small screens
-[fr] http://www.alsacreations.com/astuce/lire/1177
-
-[1] - fixer une largeur maximale  de 100 % aux elements potentiellement problematiques
-[2] - gestion des mots longs
-*/
-@media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003432}}
-  img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video {
-    max-width: 100% !important; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003436}}
-  textarea, table, td, th, pre, code, samp {
-    word-wrap: break-word; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003439}}
-  pre, code, samp {
-    white-space: pre-line; } }
-/* orientation iOS5 font-size fix */
-@media screen and (orientation: landscape) and (max-device-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_typo\.scss}line{font-family:\00003445}}
-  html, body {
-    -webkit-text-size-adjust: 100%; } }
-/* # Hyperlinks
-   
-(c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
-
-
-
-Styleguide tinytypo.links
-*/
-/* Hyperlinks
-[fr] Signalétique des hyperliens : http://letrainde13h37.fr/43/signaletique-hyperliens/ */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000313}}
-a {
-  background: transparent;
-  color: inherit; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000317}}
-a:visited {
-  color: inherit; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000318}}
-a:focus {
-  outline: thin dotted;
-  background: #222 !important;
-  border-color: #222 !important;
-  color: #f8f8f8 !important;
-  text-shadow: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000325}}
-a:hover {
-  outline: 0;
-  cursor: pointer; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000329}}
-a:active {
-  outline: 0; }
-
-/* a { outline: none; }
-[en] http://www.outlinenone.com
-[fr] http://www.outlinenone.fr
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000334}}
-a:after,
-a:before,
-a small {
-  font-size: 90%;
-  opacity: .9; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000340}}
-a[hreflang]:after {
-  content: " [" attr(hreflang) "]"; }
-
-/* External Links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000342}}
-a.external:after {
-  content: " ➚"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000344}}
-a[hreflang].external:after {
-  content: " [" attr(hreflang) "] ➚"; }
-
-/* mailto / tel */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000346}}
-a.mailto:after {
-  content: " ✉"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000348}}
-a.tel:after {
-  content: " ✆"; }
-
-/* Documents */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000352}}
-a.download:after {
-  content: " ↧"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000354}}
-a[hreflang].download:after {
-  content: " [" attr(hreflang) "] ↧"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000355}}
-a.audio:after {
-  content: " ♫"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000357}}
-a[hreflang].audio:after {
-  content: " [" attr(hreflang) "] ♫"; }
-
-/* Linked images */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000363}}
-a img {
-  border: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000364}}
-a:focus img,
-a:active img {
-  -moz-transform: translateY(1px);
-  -webkit-transform: translateY(1px);
-  -o-transform: translateY(1px);
-  -ms-transform: translate(1px);
-  transform: translateY(1px); }
-
-@media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000376}}
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000378}}
-  a:after {
-    content: ""; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000379}}
-  a[rel="external"]:after,
-  a.external:after {
-    content: " (" attr(href) ")"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_links\.scss}line{font-family:\0000381}}
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-
-  /* Don't show links for images, or javascript/internal links */ }
+  text-decoration: blink;
+}
 /* --------------------------------------------------
 
-   Illustrations, images and albums
+   Typographical base
    
    (c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
 
 ----------------------------------------------------- */
-/* Make images responsive by default */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000310}}
-img {
-  max-width: 100%;
-  height: auto; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000315}}
-img {
-  vertical-align: middle; }
-
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000322}}
-audio, canvas, progress, video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000332}}
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000340}}
-[hidden], template {
-  display: none; }
-
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000346}}
-img {
-  border: 0; }
-
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000352}}
-svg:not(:root) {
-  overflow: hidden; }
-
-/* thumbnail */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000356}}
-.thumb, .thumb.left {
-  margin: 0 10px 10px 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000359}}
-.thumb.right {
-  margin: 0 0 10px 10px; }
-
-/* style effects */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000363}}
-img.round {
-  border-radius: 5px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000366}}
-img.circle {
-  border-radius: 50%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000369}}
-img.border {
-  padding: 4px;
-  background-color: #fff;
-  border: 1px solid #bbb; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000374}}
-img.shadow {
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7), -1px 2px 20px rgba(255, 255, 255, 0.6) inset; }
-
-/* figure */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000381}}
-figure {
-  margin: 0;
-  margin-bottom: 0.75em;
-  text-align: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000386}}
-figure.center {
-  margin-bottom: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000389}}
-figure.left {
-  margin-right: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000392}}
-figure.right {
-  margin-left: 1.5em; }
-
-@media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\0000399}}
-  figure {
-    margin-bottom: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\00003104}}
-  figure.left {
-    float: none;
-    margin-right: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\00003108}}
-  figure.right {
-    float: none;
-    margin-left: 0; } }
-/* album */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\00003118}}
-.album {
-  margin-bottom: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\00003122}}
-.album ul {
-  overflow: hidden;
-  margin: 0;
-  list-style: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\00003127}}
-.album li {
-  float: left;
-  margin: 0;
-  margin: 0 10px 10px 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_media\.scss}line{font-family:\00003132}}
-.album .thumb {
-  margin: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\000033}}
+html {
+  font-size: 100.01%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/
+et http://forum.alsacreations.com/topic-4-54377-1.html
+[en] http://stackoverflow.com/questions/2703056/body-font-size-100-01-vs-body-font-size-100 */
 body {
-  text-align: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\000037}}
-.page {
-  width: 40em;
-  max-width: 768px;
-  margin: 1em auto;
-  text-align: left; }
-
-@media (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000315}}
-  .page {
-    width: 80%; } }
-@media (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000319}}
-  .page {
-    width: auto;
-    margin: 1em 10px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000325}}
-.half {
-  float: left;
-  width: 45%;
-  margin-right: 5%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000331}}
-.third {
-  float: left;
-  width: 30%;
-  margin-right: 3%; }
-
-@media (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000338}}
-  .half,
-  .third {
-    float: none;
-    width: 100%;
-    margin-right: 0; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000346}}
-section {
-  padding-top: 3em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000348}}
-section:First-Child {
-  padding: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000350}}
-header {
-  position: relative; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000352}}
-header:before {
-  z-index: -1;
-  position: absolute;
-  content: "\0000a0\270D";
-  top: 0;
-  right: 0;
-  font-size: 3em;
-  line-height: 0;
-  font-size: 18em;
-  color: rgba(153, 0, 0, 0.4); }
-
-@media (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000365}}
-  header:before {
-    font-size: 12em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000368}}
-nav#nav {
-  margin-bottom: 1.5em;
-  line-height: 1; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000373}}
-nav#nav ul {
-  margin: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000375}}
-nav#nav ul li {
-  margin: 0 !important; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000377}}
-nav#nav ul li a {
-  display: inline-block;
-  padding: 6px;
-  text-decoration: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000383}}
-blockquote.text-right {
-  padding-left: 0;
-  padding-right: 1.5em;
-  border-width: 0 5px 0 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\0000389}}
-.btn {
-  display: inline-block;
-  padding: .25em .75em;
-  background-color: rgba(153, 0, 0, 0.3);
-  border: 1px solid;
-  border-radius: 6px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset;
-  color: #333;
-  font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif; }
-
-@media (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003101}}
-  .btn {
-    font-size: 100% !important; } }
-@media only screen and (max-width: 640px), (min-device-width: 640px) and (max-device-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003105}}
-  #var table,
-  #var thead,
-  #var tbody,
-  #var th,
-  #var td,
-  #var tr {
-    display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003112}}
-  #var caption,
-  #var thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003119}}
-  #var tr {
-    border: 1px solid; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003121}}
-  #var th.text-right {
-    text-align: left; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003123}}
-  #var td {
-    border: 0;
-    border-bottom: 1px solid;
-    position: relative;
-    padding-left: 35%;
-    text-align: left; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003131}}
-  #var td:before {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 30%;
-    padding-right: 10px;
-    white-space: nowrap; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003140}}
-  #var td:nth-of-type(1):before,
-  #var td:nth-of-type(2):before,
-  #var td:nth-of-type(3):before {
-    color: #75754a;
-    font-size: 80%;
-    text-align: right; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003148}}
-  #var td:nth-of-type(1):before {
-    content: "Variable"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003150}}
-  #var td:nth-of-type(2):before {
-    content: "Usage"; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003152}}
-  #var td:nth-of-type(3):before {
-    content: "Valeur"; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003155}}
+  font-size: 1em;
+  line-height: 1.5;
+}
+/* Fonts */
 .font1 {
-  font-family: "Lucida Bright", Georgia, "Times New Roman", serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003157}}
+  font-family: serif;
+}
 .font2 {
-  font-family: "Goudy Old Style", Garamond, "Big Caslon", Georgia, "Times New Roman", serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003159}}
+  font-family: sans-serif;
+}
 .font3 {
-  font-family: "Courier New", Courier, monospace; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003161}}
+  font-family: monospace;
+}
 .font4 {
-  font-family: fantasy; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003163}}
-body {
-  background-color: #f3f3ec;
-  font-family: 'Lucida Bright',Georgia,'Times New Roman',serif;
-  color: #0c0c08;
-  border-top: 5px solid #2c2c1b;
-  text-shadow: 0 1px 0 #fdfdfc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003171}}
-pre,
-code,
-kbd,
-samp,
-var,
-tt {
-  font-family: 'Courier New',Courier,monospace;
-  background-color: rgba(227, 227, 211, 0.5);
-  color: #3b3b25; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003182}}
+  font-family: fantasy;
+}
+/* Titraille / Intertitres */
 h1,
 .h1,
 h2,
@@ -1247,182 +142,774 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
-  color: #900; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003198}}
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
 h1,
 .h1 {
-  font-size: 2.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003201}}
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: .75em;
+}
 h2,
 .h2 {
-  font-size: 2em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003204}}
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
 h3,
 .h3 {
-  font-size: 1.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003207}}
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 1.2em;
+}
 h4,
 .h4 {
-  font-size: 1.3em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003210}}
+  font-size: 1.1em;
+  line-height: 1.364;
+  margin-bottom: 1.364em;
+}
+h5,
+.h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6,
+.h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small {
+  font-size: 60%;
+  line-height: 0;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  margin: 1.5em 0;
+  border: solid;
+  border-width: 1px 0 0;
+}
+/* Typographical enhancements */
+em,
+i,
+.i {
+  font-style: italic;
+}
+strong,
+b,
+.b {
+  font-weight: bold;
+}
+mark,
+.mark {
+  background: #ff0;
+  color: #000;
+}
+.smaller {
+  font-size: 75%;
+}
+small,
+.small {
+  font-size: 80%;
+}
+big,
+.big {
+  font-size: 130%;
+}
+.bigger {
+  font-size: 175%;
+}
+.biggest {
+  font-size: 200%;
+}
+abbr[title],
+acronym[title] {
+  border-bottom: .1em dotted;
+  cursor: help;
+}
+@media print {
+  abbr[title] {
+    border-bottom: 0;
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+}
+dfn,
+.dfn {
+  font-weight: bold;
+  font-style: italic;
+}
+s,
+strike,
+del,
+.del {
+  opacity: .5;
+  text-decoration: line-through;
+}
+ins,
+.ins {
+  background-color: rgba(255, 255, 204, 0.5);
+  text-decoration: none;
+}
+u,
+.u {
+  text-decoration: underline;
+}
+sup,
+.sup,
+sub,
+.sub {
+  position: relative;
+  font-size: 80%;
+  font-variant: normal;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup,
+.sup {
+  top: -0.5em;
+}
+sub,
+.sub {
+  bottom: -0.25em;
+}
 .lead {
-  font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
-  font-size: 150%;
-  line-height: 1.5; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003216}}
-.lead,
-.lead * {
-  color: #900; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003219}}
+  font-size: 120%;
+}
+.caps {
+  font-variant: small-caps;
+}
 .quiet {
-  color: #898957; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003221}}
-hr,
+  color: #555555;
+}
+/* Alignment */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+  text-justify: newspaper;
+}
+/* Lists */
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-greek;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ol,
+ul {
+  margin-left: 1.5em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 1.5em;
+}
+.list-none {
+  margin-left: 0;
+  list-style: none;
+}
+.list-none li:before {
+  content: '';
+}
+.list-square {
+  margin-left: 1.5em;
+  list-style: square;
+}
+.list-square li:before {
+  content: '';
+}
+.list-disc {
+  margin-left: 1.5em;
+  list-style: disc;
+}
+.list-disc li:before {
+  content: '';
+}
+.list-circle {
+  margin-left: 1.5em;
+  list-style: circle;
+}
+.list-circle li:before {
+  content: '';
+}
+.list-decimal {
+  margin-left: 1.5em;
+  list-style: decimal;
+}
+.list-decimal li:before {
+  content: '';
+}
+.list-inline {
+  margin-left: 0;
+}
+.list-inline li {
+  display: inline-block;
+  margin: 0;
+  margin-right: 1em;
+}
+.list-inline li:Last-Child {
+  margin-right: 0;
+}
+.list-inline.list-inline-sep li {
+  margin-right: 0;
+}
+.list-inline.list-inline-sep li:after {
+  content: " | ";
+}
+.list-inline.list-inline-sep li:Last-Child:after {
+  content: '';
+}
+.list-inline.list-inline-dash li {
+  margin-right: 0;
+}
+.list-inline.list-inline-dash li:after {
+  content: " - ";
+}
+.list-inline.list-inline-dash li:Last-Child:after {
+  content: '';
+}
+.list-inline.list-inline-comma li {
+  margin-right: 0;
+}
+.list-inline.list-inline-comma li:after {
+  content: ", ";
+}
+.list-inline.list-inline-comma li:Last-Child:after {
+  content: ". ";
+}
+.list-block li {
+  display: block;
+  margin-right: 0;
+}
+/* Tables */
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table {
+  width: 100%;
+}
 .table caption,
 .table th,
-.table td,
-.box {
-  border-color: #898957; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003227}}
-.table caption,
-.table thead {
-  color: #1c1c12; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003230}}
-blockquote {
-  border-color: #ddddca;
-  color: #3b3b25; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003235}}
-blockquote:before {
-  font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
-  color: #e9e9dc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003240}}
-pre {
-  padding: 1em;
-  border: 1px solid #dfdfcd; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003245}}
-address {
-  color: #3b3b25; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003247}}
-.box {
-  background-color: #efefe6;
-  border-color: #dfdfcd;
-  color: #3b3b25; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003253}}
-a:link {
-  text-decoration: none;
-  border-bottom: 1px solid; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003258}}
-a:hover {
-  background-color: rgba(153, 0, 0, 0.1);
-  color: #900; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003263}}
-header {
-  padding-top: 1.5; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003265}}
-header:before {
-  top: -30px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003267}}
-header h1 {
-  color: #900;
+.table td {
+  padding: 0.375em;
+}
+.table caption {
   font-weight: bold;
-  font-size: 4em;
-  margin-bottom: .2em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003274}}
-header:before {
-  color: #2c2c1b; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003276}}
-nav#nav {
-  border: 0;
-  border: solid #898957;
-  border-width: 1px 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003282}}
-nav#nav ul li a {
-  padding: .75em .375em;
-  border: 0 !important;
-  font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
-  font-size: 110%; }
-
+  text-align: left;
+  border-bottom: 2px solid;
+}
+.table th {
+  font-weight: bold;
+}
+.table th,
+.table td {
+  border-bottom: 1px solid;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table tbody tr:hover td {
+  background-color: rgba(34, 34, 34, 0.050000000000000044);
+}
+.table tfoot {
+  font-style: italic;
+}
+.table tfoot td {
+  border-bottom: 0;
+  vertical-align: top;
+}
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003290}}
-  header h1 {
-    font-size: 2.5em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003292}}
-  nav#nav ul li a {
-    font-size: 110%; } }
-/* # Print styles
-
-Print styles from HTML5 Boilerplate
-Inlined to avoid required HTTP connection: <h5bp.com/r>
-
-(c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
-
-Styleguide tinytypo.print
-*/
+  .table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: 1.5em;
+  }
+  .table-responsive table {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive tfoot,
+  .table-responsive tr,
+  .table-responsive th,
+  .table-responsive td {
+    white-space: nowrap;
+  }
+}
+/* Quotes, code and poetry */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+:lang(en) > q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+:lang(fr) > q {
+  quotes: "\00AB\A0" "\A0\00BB" "\201C" "\201D" "\2018" "\2019";
+}
+:lang(es) > q {
+  quotes: "\00AB" "\00BB" "\201C" "\201D";
+}
+:lang(it) > q {
+  quotes: "\00AB\A0" "\A0\00BB" "\201C" "\201D";
+}
+:lang(de) > q {
+  quotes: "\00BB" "\00AB" "\203A" "\2039";
+}
+:lang(no) > q {
+  quotes: "\00AB\A0" "\A0\00BB" "\2039" "\203A";
+}
+/* [en] http://en.wikipedia.org/wiki/International_variation_in_quotation_marks */
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+blockquote {
+  z-index: 0;
+  position: relative;
+  padding-left: 1.5em;
+  border: solid rgba(34, 34, 34, 0.19999999999999996);
+  border-width: 0 0 0 5px;
+}
+blockquote:before {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "\00AB";
+  line-height: 0;
+  font-size: 10em;
+  color: rgba(34, 34, 34, 0.09999999999999998);
+}
+cite,
+.cite {
+  font-style: italic;
+}
+address {
+  font-style: italic;
+}
+pre,
+code,
+kbd,
+samp,
+var,
+tt {
+  font-family: monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+kbd {
+  white-space: nowrap;
+  padding: .1em .3em;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+  color: #333;
+}
+samp {
+  font-weight: bold;
+}
+var {
+  font-style: italic;
+}
+/* Box */
+.box {
+  display: block;
+  margin-bottom: 1.5em;
+  padding: 1.5em 1.5em;
+  padding-bottom: .1em;
+  border: 1px solid;
+}
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000313}}
-  * {
-    text-shadow: none !important;
-    color: #000 !important;
-    background: transparent !important;
-    box-shadow: none !important; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000320}}
-  img {
-    max-width: 100% !important; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000324}}
-  pre, blockquote {
-    page-break-inside: avoid; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000327}}
+  .box {
+    border: 1px solid !important;
+  }
+}
+@media (min-width: 640px) {
+  .box.right {
+    width: 33%;
+    margin-left: 1.5em;
+  }
+  .box.left {
+    width: 33%;
+    margin-right: 1.5em;
+  }
+  .box.center {
+    width: 75%;
+  }
+}
+/* Paragraphs */
+p,
+.p,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+pre,
+.table,
+fieldset {
+  margin-bottom: 1.5em;
+}
+/* Typography for small screens
+[fr] http://www.alsacreations.com/astuce/lire/1177 */
+@media (max-width: 640px) {
+  /* fixer une largeur maximale  de 100 % aux elements potentiellement problematiques */
+  img,
+  table,
+  td,
+  blockquote,
+  code,
+  pre,
+  textarea,
+  input,
+  iframe,
+  object,
+  embed,
+  video {
+    max-width: 100% !important;
+  }
+  /* gestion des mots longs */
+  textarea,
+  table,
+  td,
+  th,
+  pre,
+  code,
+  samp {
+    word-wrap: break-word;
+    /* cesure forcee */
+  }
+  pre,
+  code,
+  samp {
+    white-space: pre-line;
+    /* passage a la ligne specifique pour les elements a chasse fixe */
+  }
+}
+/* orientation iOS5 font-size fix */
+@media (orientation: landscape) and (max-device-width: 640px) {
+  html,
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+/* Print styles from HTML5 Boilerplate
+Inlined to avoid required HTTP connection: h5bp.com/r */
+@media print {
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+  }
   thead {
-    display: table-header-group; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000330}}
-  tr, img {
-    page-break-inside: avoid; }
-
-  @page {
-    margin: 2cm .5cm; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000336}}
-  p, h2, h3 {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  @page  {
+    margin: 2cm .5cm;
+  }
+  p,
+  h2,
+  h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* --------------------------------------------------
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000340}}
-  h2, h3 {
-    page-break-after: avoid; }
+   Hyperlinks
+   
+   (c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000343}}
-  abbr[title] {
-    border-bottom: 0; }
+----------------------------------------------------- */
+/* Hyperlinks
+[fr] Signalétique des hyperliens : http://letrainde13h37.fr/43/signaletique-hyperliens/ */
+a {
+  background: transparent;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:focus {
+  outline: thin dotted;
+  background: #222222 !important;
+  border-color: #222222 !important;
+  color: #f8f8f8 !important;
+  text-shadow: none;
+}
+a:hover {
+  outline: 0;
+  cursor: pointer;
+}
+a:active {
+  outline: 0;
+}
+/* a { outline: none; }
+[en] http://www.outlinenone.com
+[fr] http://www.outlinenone.fr
+*/
+a:after,
+a:before,
+a small {
+  font-size: 90%;
+  opacity: .9;
+}
+a[hreflang]:after {
+  content: "\0000a0[" attr(hreflang) "]";
+}
+/* External Links */
+a.external:after {
+  content: "\0000a0\279A";
+}
+a[hreflang].external:after {
+  content: "\0000a0[" attr(hreflang) "]\0000a0\279A";
+}
+/* mailto / tel */
+a.mailto:after {
+  content: "\0000a0\2709";
+}
+a.tel:after {
+  content: "\0000a0\2706";
+}
+/* Documents */
+a.download:after {
+  content: "\0000a0\21A7";
+}
+a[hreflang].download:after {
+  content: "\0000a0[" attr(hreflang) "]\0000a0\21A7";
+}
+a.audio:after {
+  content: "\0000a0\266B";
+}
+a[hreflang].audio:after {
+  content: "\0000a0[" attr(hreflang) "]\0000a0\266B";
+}
+/* Linked images */
+a img {
+  border: 0;
+}
+a:focus img,
+a:active img {
+  -moz-transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -o-transform: translateY(1px);
+  -ms-transform: translate(1px);
+  transform: translateY(1px);
+}
+@media print {
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a:after {
+    content: '';
+  }
+  a[rel="external"]:after,
+  a.external:after {
+    content: " (" attr(href) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: '';
+  }
+  /* Don't show links for images, or javascript/internal links */
+}
+/* --------------------------------------------------
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_print\.scss}line{font-family:\0000346}}
-  abbr[title]:after {
-    content: " (" attr(title) ")"; } }
+   Illustrations, images and albums
+   
+   (c) 2010-2014 Tiny Typo v1.3.2 - MIT License - tinytypo.tetue.net
 
-/*# sourceMappingURL=tinytypo.css.map */
+----------------------------------------------------- */
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media print {
+  img {
+    max-width: 100% !important;
+  }
+}
+img {
+  vertical-align: middle;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+
+  vertical-align: baseline;
+  /* 2 */
+
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* thumbnail */
+.thumb,
+.thumb.left {
+  margin: 0 10px 10px 0;
+}
+.thumb.right {
+  margin: 0 0 10px 10px;
+}
+/* style effects */
+img.round {
+  border-radius: 5px;
+}
+img.circle {
+  border-radius: 50%;
+}
+img.border {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+}
+img.shadow {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7), -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+}
+/* figure */
+figure {
+  margin: 0;
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+figure.center {
+  margin-bottom: 1.5em;
+}
+figure.left {
+  margin-right: 1.5em;
+}
+figure.right {
+  margin-left: 1.5em;
+}
+@media (max-width: 640px) {
+  figure {
+    margin-bottom: 1.5em;
+  }
+  figure.left {
+    float: none;
+    margin-right: 0;
+  }
+  figure.right {
+    float: none;
+    margin-left: 0;
+  }
+}
+/* album */
+.album {
+  margin-bottom: 1.5em;
+}
+.album ul {
+  overflow: hidden;
+  margin: 0;
+  list-style: none;
+}
+.album li {
+  float: left;
+  margin: 0;
+  margin: 0 10px 10px 0;
+}
+.album .thumb {
+  margin: 0;
+}
