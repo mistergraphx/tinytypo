@@ -1235,57 +1235,48 @@ tt {
   color: #3b3b25; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003182}}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
   font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
   color: #900; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003198}}
-h1,
-.h1 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003192}}
+h1, .h1 {
   font-size: 2.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003201}}
-h2,
-.h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003196}}
+h2, .h2 {
   font-size: 2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003204}}
-h3,
-.h3 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003200}}
+h3, .h3 {
   font-size: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003204}}
 h4,
 .h4 {
   font-size: 1.3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003207}}
 .lead {
   font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
   font-size: 150%;
   line-height: 1.5; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003213}}
 .lead,
 .lead * {
   color: #900; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003216}}
 .quiet {
   color: #898957; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003218}}
 hr,
 .table caption,
 .table th,
@@ -1293,72 +1284,72 @@ hr,
 .box {
   border-color: #898957; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003224}}
 .table caption,
 .table thead {
   color: #1c1c12; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003227}}
 blockquote {
   border-color: #ddddca;
   color: #3b3b25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003232}}
 blockquote:before {
   font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
   color: #e9e9dc; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003237}}
 pre {
   padding: 1em;
   border: 1px solid #dfdfcd; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003242}}
 address {
   color: #3b3b25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003244}}
 .box {
   background-color: #efefe6;
   border-color: #dfdfcd;
   color: #3b3b25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003250}}
 a:link {
   text-decoration: none;
   border-bottom: 1px solid; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003255}}
 a:hover {
-  background-color: rgba(153, 0, 0, 0.1);
+  background-color: rgba(153, 0, 0, 0.09);
   color: #900; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003260}}
 header {
   padding-top: 1.5; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003262}}
 header:before {
   top: -30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003264}}
 header h1 {
   color: #900;
   font-weight: bold;
   font-size: 4em;
   margin-bottom: .2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003274}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003271}}
 header:before {
   color: #2c2c1b; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003273}}
 nav#nav {
   border: 0;
   border: solid #898957;
   border-width: 1px 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003279}}
 nav#nav ul li a {
   padding: .75em .375em;
   border: 0 !important;
@@ -1366,11 +1357,11 @@ nav#nav ul li a {
   font-size: 110%; }
 
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003287}}
   header h1 {
     font-size: 2.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macbook\/Sites\/_GX_FACTORY\/_EXTENSIONS\/tinytypo\/scss\/_theme\.scss}line{font-family:\00003289}}
   nav#nav ul li a {
     font-size: 110%; } }
 /* # Print styles

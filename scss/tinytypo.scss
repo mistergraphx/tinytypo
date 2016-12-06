@@ -15,12 +15,14 @@ Styleguide tinytypo
 @import "font";
 
 // Reset
-@import "reset";
+//@import "reset";
 
 // Base CSS
 @import "clear";
 @import "typo";
 @import "links";
 @import "media";
-@import "theme";
+
+//@import "theme";
+
 @import "print";

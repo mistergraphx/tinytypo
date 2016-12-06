@@ -52,7 +52,7 @@ header { position: relative }
 header:before {
     z-index: -1;
     position: absolute;
-    content: "\0000a0\270D";
+    content: "\0000a0\270D"; // http://unicode-table.com/en/270D/
     top: 0;
     right: 0;
     font-size: 3em;
@@ -89,16 +89,16 @@ blockquote.text-right {
 .btn {
     display: inline-block;
     padding: .25em .75em;
-    background-color: rgba(153,0,0,0.30000000000000004);
+    background-color: rgba(153,0,0, .30);
     border: 1px solid;
     border-radius: 6px;
-    box-shadow: 0 2px 0 rgba(0,0,0,0.2),0 0 0 1px #fff inset;
+    box-shadow: 0 2px 0 rgba(0,0,0, .2),0 0 0 1px #fff inset;
     color: #333;
     font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
 }
 
 @media (max-width:480px) { 
-	.btn { font-size: 100%!important }
+	.btn { font-size: 100% !important }
 }
 
 @media only screen and (max-width:640px),(min-device-width:640px) and (max-device-width:1024px) { 
@@ -179,30 +179,27 @@ tt {
     color: #3b3b25;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
     font-family: 'Goudy Old Style',Garamond,'Big Caslon',Georgia,'Times New Roman',serif;
     color: #900;
 }
 
-h1,
-.h1 { font-size: 2.5em }
+h1,.h1 {
+    font-size: 2.5em
+}
 
-h2,
-.h2 { font-size: 2em }
+h2,.h2 {
+    font-size: 2em
+}
 
-h3,
-.h3 { font-size: 1.5em }
+h3,.h3 {
+    font-size: 1.5em
+}
 
 h4,
 .h4 { font-size: 1.3em }
@@ -256,7 +253,7 @@ a:link {
 }
 
 a:hover {
-    background-color: rgba(153,0,0,0.09999999999999998);
+    background-color: rgba(153,0,0, .09);
     color: #900;
 }
 
