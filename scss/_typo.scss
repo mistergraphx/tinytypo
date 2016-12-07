@@ -76,7 +76,6 @@ h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 sma
 	line-height: 0;
 }
 hr {
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	height: 0;
 	margin: $p 0;
@@ -152,7 +151,7 @@ sub, .sub {
 	color: lighten($color-txt, 20%);
 }
 /* Alignment */
- .text-left {
+.text-left {
 	text-align: left;
 }
 .text-right {
@@ -163,7 +162,7 @@ sub, .sub {
 }
 .text-justify {
 	text-align: justify;
-	text-justify: newspaper;
+	text-justify: newspaper; // Uniquement supporte par IE5 ^^ - http://www.w3schools.com/cssref/css3_pr_text-justify.asp
 }
 /* Lists */
  ul, ol, li, dl, dt, dd {
@@ -304,7 +303,7 @@ table {
 // tbody tr.odd th,
 // tbody tr.odd td { background-color: fadeout($color-txt,90%) }
 // tbody tr:hover th,
-.table tbody tr:hover td { background-color: fadeout($color-txt,95%) }
+.table tbody tr:hover td { background-color: fade-out($color-txt, .95) }
 .table tfoot { font-style: italic }
 .table tfoot td {
     border-bottom: 0;
